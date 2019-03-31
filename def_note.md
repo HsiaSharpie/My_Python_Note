@@ -3,14 +3,13 @@
 假設我們今天要建構一個函式去計算全校個班的平均身高來進行比較，但問題來了!
 每班同學的人數各不相同，我們若要在參數丟入每人的身高，該怎麼辦呢？
 ```bash
-此時就*參數就派上用場了！
+此時，*參數就派上用場了！
 ```
 Example:
 ```Python
 def avg_height(first, *rest):
     return (first + sum(rest)) / (1 + len(rest))
-```
-```python
+
 >>> avg_height(150, 170)
 160
 >>> avg_height(150, 170, 178, 166)
