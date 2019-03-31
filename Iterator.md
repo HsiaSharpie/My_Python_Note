@@ -4,7 +4,7 @@
 
 Example :
 ```python
-names = ['Jay Park', 'Simon Dominic', 'Loco']
+names = ['Jay', 'Simon', 'James']
 for name in names:
   print(name)
 ```
@@ -57,7 +57,7 @@ False
 
 對於這些迭代器物件，我們可使用 `Python` 內建的 `iter()` 函數來對迭代器物件進行作用：
 ```python
-names = ['Jay Park', 'Simon Dominic', 'Loco']
+names = ['Jay', 'Simon', 'James']
 >>> from collections import Iterator
 >>> isinstance(iter(names), Iterator)
 True
@@ -68,7 +68,7 @@ TypeError: 'list' object is not an iterator
 >>> isinstance(iter_names, Iterator)
 True
 >>> next(iter_names)
-'Jay Park'
+'Jay'
 ```
 事實上，我們平常在使用 `for` 迴圈去進行迭代時，即為先透過 `iter()` 去取得迭代器`(Iterator)` ，然後再依序使用 `next()` 函數。
 
@@ -79,13 +79,13 @@ True
 
 好！現在我們充分了解什麼是 `可迭代物件` 、`迭代器` 後，回到最一開始的例子：
 ```python
-names = ['Jay Park', 'Simon Dominic', 'Loco']
+names = ['Jay', 'Simon', 'James']
 for name in names:
   print(name)
 ```
 如果我們把它拆解成一個 `function` 該怎麼轉換？
 ```python
-names = ['Jay Park', 'Simon Dominic', 'Loco']
+names = ['Jay', 'Simon', 'James']
 iter_names = iter(names)
 while True:
   try:
