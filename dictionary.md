@@ -18,8 +18,17 @@ stocks = {
 }
 ```
 
-在`Iterator`那篇中，有提到可對`dictionary`使用 `for` 迴圈去迭代。除此之外，還有哪些方式
-可取得初始化後的資料？
+在`Iterator`那篇中，有提到可對`dictionary`使用 `for` 迴圈去迭代。所以到底有哪些方式可取得初始化後的資料？
 1. for loop with items()
 2. get method
 3. setdefalut method
+
+-> 1.for loop with items()
+Example :
+```bash
+for stock, values in stocks.items():
+  print('{} last value is {}'.format(stock, values[0]))
+
+GOOG last value is 613.3
+MSFT last value is 30.25
+```
