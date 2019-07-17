@@ -23,12 +23,20 @@ stocks = {
 2. get method
 3. setdefalut method
 
--> 1.for loop with items()
-Example :
-```bash
+1.for loop with items()
+<br>Example :
+```Python
 for stock, values in stocks.items():
   print('{} last value is {}'.format(stock, values[0]))
-
-GOOG last value is 613.3
-MSFT last value is 30.25
 ```
+```bash
+Note:
+除了 items()方法外，字典的 keys()、values() 方法也是非常實用的。
+```
+
+2.get method
+<br>Example :
+```Python
+stocks.get('RIM', 'Not Found')
+```
+```bash
