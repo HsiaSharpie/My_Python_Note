@@ -9,3 +9,17 @@
 
 而關於`hashable`，我覺得這篇寫得非常棒，很值得參考參考。
 -> https://ithelp.ithome.com.tw/articles/10208884
+
+`dictionary`的建構實在非常的簡單！我們以字典簡單建構一個股票名稱價格查詢表：
+```python
+stocks = {
+  'GOOG': (613.30, 625.86, 610.50),
+  'MSFT': (30.25, 30.70, 30.19)
+}
+```
+
+在`Iterator`那篇中，有提到可對`dictionary`使用 `for` 迴圈去迭代。除此之外，還有哪些方式
+可取得初始化後的資料？
+1. for loop with items()
+2. get method
+3. setdefalut method
