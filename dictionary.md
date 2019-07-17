@@ -23,7 +23,7 @@ stocks = {
 2. get method
 3. setdefalut method
 
-1.for loop with items()
+(1) for loop with items()
 <br>Example :
 ```Python
 for stock, values in stocks.items():
@@ -34,9 +34,26 @@ Note:
 除了 items()方法外，字典的 keys()、values() 方法也是非常實用的。
 ```
 
-2.get method
+(2) get method
 <br>Example :
 ```Python
 stocks.get('RIM', 'Not Found')
 ```
+
+Note:
+<br>get method其實與dictionary[key]的概念很接近，不過在key不存在時，get可避免跑出`KeyError`而中斷程式。
+<br>Example:
 ```bash
+>>> stocks.get('RIM', default_value)
+return defalut_value
+```
+如果你用一般的索引方式：
+```bash
+>>> stocks['RIM']
+raise KeyError
+```
+或是，你並沒有設定default_value:
+```bash
+>>> stocks.get('RIM')
+return None
+```
