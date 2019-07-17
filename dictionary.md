@@ -7,5 +7,5 @@
 1. 鍵是一個`hashable value`。
 2. 值是一個任意的物件。
 
-而關於`hashable`，我覺得這篇寫得非常棒，很直得參考參考。
-<br>(https://ithelp.ithome.com.tw/articles/10208884)
+而關於`hashable`，我覺得這篇寫得非常棒，很值得參考參考。
+-> https://ithelp.ithome.com.tw/articles/10208884
