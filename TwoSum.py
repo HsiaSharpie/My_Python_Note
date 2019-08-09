@@ -12,4 +12,4 @@ given_nums = [2, 7, 11, 15]
 target = 9
 
 if __name__ == "__main__":
-    print(Solution().TwoSum(given_nums, target))
+    print(Solution().TwoSum(given_nums, target)
