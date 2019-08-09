@@ -47,13 +47,13 @@ Note:
 >>> stocks.get('RIM', default_value)
 return defalut_value
 ```
-如果你用一般的索引方式：
-```bash
->>> stocks['RIM']
-raise KeyError
-```
 或是，你並沒有設定default_value:
 ```bash
 >>> stocks.get('RIM')
 return None
+```
+如果你用一般的索引方式：
+```bash
+>>> stocks['RIM']
+raise KeyError
 ```
