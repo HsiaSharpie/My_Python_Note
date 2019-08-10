@@ -7,3 +7,5 @@
 ------------------------------------------------------------------------------
 Leetcode Practice:
 1. [TwoSum](https://github.com/HsiaSharpie/My_Python_Note/blob/master/TwoSum.py)
+2. [MajorityElement](https://github.com/HsiaSharpie/My_Python_Note/blob/master/majorityElement.py)
+3. [RemoveDuplicates](https://github.com/HsiaSharpie/My_Python_Note/blob/master/RemoveDuplicates.py)
